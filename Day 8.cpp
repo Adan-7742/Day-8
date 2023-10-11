@@ -70,35 +70,6 @@ int loop() {
     }
     return 0;
 }
-int loop_2() {
-
-
-
-    // Find the prime numbers between 1 and 100
-    vector<int> primes;
-
-    for (int i = 2; i <= 100; i++) {
-        bool isPrime = true;
-        for (int j = 2; j * j <= i; j++) {
-            if (i % j == 0) {
-                isPrime = false;
-                break;
-            }
-        }
-
-        if (isPrime) {
-            primes.push_back(i);
-        }
-    }
-
-    cout << "The prime numbers between 1 and 100 are: ";
-    for (int prime : primes) {
-        cout << prime << " ";
-    }
-    cout << endl;
-
-    return 0;
-}
 
 int main()
 {
@@ -108,7 +79,7 @@ int main()
 	week(c);
     max_fun();
     loop();
-    loop_2();
+
 }
 
 
